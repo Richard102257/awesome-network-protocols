@@ -1,0 +1,16 @@
+{
+  "canonical": "en",
+  "languages": [
+    {"code":"en","name":"English","nativeName":"English","direction":"ltr","status":"canonical"},
+    {"code":"zh-CN","name":"Simplified Chinese","nativeName":"简体中文","direction":"ltr","status":"maintained"},
+    {"code":"zh-TW","name":"Traditional Chinese","nativeName":"繁體中文","direction":"ltr","status":"community"},
+    {"code":"ja","name":"Japanese","nativeName":"日本語","direction":"ltr","status":"community"},
+    {"code":"ko","name":"Korean","nativeName":"한국어","direction":"ltr","status":"community"},
+    {"code":"es","name":"Spanish","nativeName":"Español","direction":"ltr","status":"community"},
+    {"code":"pt-BR","name":"Brazilian Portuguese","nativeName":"Português do Brasil","direction":"ltr","status":"community"},
+    {"code":"fr","name":"French","nativeName":"Français","direction":"ltr","status":"community"},
+    {"code":"de","name":"German","nativeName":"Deutsch","direction":"ltr","status":"community"},
+    {"code":"ru","name":"Russian","nativeName":"Русский","direction":"ltr","status":"community"},
+    {"code":"ar","name":"Arabic","nativeName":"العربية","direction":"rtl","status":"community"}
+  ]
+}

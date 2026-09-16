@@ -1,0 +1,25 @@
+name: Suggest a protocol
+description: Propose a missing protocol or standard
+title: "Protocol: "
+labels: [protocol]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Protocol name
+    validations:
+      required: true
+  - type: input
+    id: standard
+    attributes:
+      label: Official standard or specification
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose and suggested category
+    validations:
+      required: true
+

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Awesome Network Protocol entry",
+  "type": "object",
+  "required": ["id", "name", "layer", "category", "status", "ports", "standard", "url", "en", "zh-CN"],
+  "properties": {
+    "id": {"type":"string", "pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "name": {"type":"string", "minLength":1},
+    "layer": {"enum":["physical","data-link","network","transport","session","presentation","application"]},
+    "category": {"type":"string", "minLength":1},
+    "status": {"enum":["current","historic","experimental","proprietary"]},
+    "ports": {"type":"array", "items":{"type":"string"}},
+    "standard": {"type":"array", "minItems":1, "items":{"type":"string"}},
+    "url": {"type":"string", "pattern":"^https://"},
+    "en": {"$ref":"#/$defs/translation"},
+    "zh-CN": {"$ref":"#/$defs/translation"}
+  },
+  "additionalProperties": false,
+  "$defs": {"translation":{"type":"object","required":["fullName","summary"],"properties":{"fullName":{"type":"string","minLength":1},"summary":{"type":"string","minLength":10}},"additionalProperties":false}}
+}
+
